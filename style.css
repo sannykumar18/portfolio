@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.highlight {
+    color: #00f2fe;
+}
+
+/* Glass effect */
+.glass {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #00f2fe;
+    color: black;
+}
+
+/* Fade animation */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+}
+
+.dark .glass {
+    background: rgba(255,255,255,0.05);
+}
